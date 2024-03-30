@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 80px;
+    background-color: black;
+    justify-content: space-around;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 20px;
+}
+
+main {
+    display: flex;
+    margin: 65px;
+    justify-content: space-between;
+}
+
+h1 {
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+
+#text {
+    width: 50%;
+    margin-top: 70px;
+}
+
+#screen {
+    text-align: center;
+    /* Adiciona alinhamento centralizado */
+}
+
+.ip {
+    display: block;
+    margin: 0 auto;
+    /* Isso centraliza horizontalmente a imagem */
+}
+
+.ball {
+    width: 650px;
+    height: 650px;
+    border-radius: 50%;
+    background-color: #EBDDEB;
+    position: fixed;
+    z-index: -1;
+    bottom: 0;
+    top: 0;
+    right: -200px;
+    display: none;
+}
+
+#apple {
+    width: 32px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.roxo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #c592c5;
+    border: none;
+}
+
+.rosa {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #F2C3CB;
+    border: none;
+}
+
+.preto {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #555E6F;
+    border: none;
+}
+
+.azul {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #5dc1d8;
+    border: none;
+}
+
+.amarelo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff566;
+    border: none;
+}
+
+.verde {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #82ff9d;
+    border: none;
+}
+
+@media(max-width: 750px){
+    main{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    } 
+    .ip{
+        width: 100%;
+        margin-top: 50px;
+    }
+    p{
+        font-size: 16px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    #text{
+        width: 100%;
+    }
+    .ball{
+        display: flex;
+        z-index: 0;
+        width: 330px;
+        height: 330px;
+        position: static;
+        margin-top: -300px;
+        align-items: center;
+        justify-content: center;
+    }
+}
